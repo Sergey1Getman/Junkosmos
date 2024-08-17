@@ -36,6 +36,7 @@
   },
   "name":"junkosmos",
   "resources":[
+    {"id":{"name":"Door1","path":"objects/Door1/Door1.yy",},},
     {"id":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},},
     {"id":{"name":"Obj_game","path":"objects/Obj_game/Obj_game.yy",},},
     {"id":{"name":"Obj_HUD","path":"objects/Obj_HUD/Obj_HUD.yy",},},
@@ -43,7 +44,9 @@
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
     {"id":{"name":"Obj_rock_small","path":"objects/Obj_rock_small/Obj_rock_small.yy",},},
     {"id":{"name":"Obj_rock","path":"objects/Obj_rock/Obj_rock.yy",},},
+    {"id":{"name":"Object9","path":"objects/Object9/Object9.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"shd_flash","path":"shaders/shd_flash/shd_flash.yy",},},
     {"id":{"name":"Healthbar_border","path":"sprites/Healthbar_border/Healthbar_border.yy",},},
     {"id":{"name":"Healthbar_empty","path":"sprites/Healthbar_empty/Healthbar_empty.yy",},},
@@ -58,11 +61,14 @@
     {"id":{"name":"spr_pointer","path":"sprites/spr_pointer/spr_pointer.yy",},},
     {"id":{"name":"spr_rock_big","path":"sprites/spr_rock_big/spr_rock_big.yy",},},
     {"id":{"name":"spr_rock_small","path":"sprites/spr_rock_small/spr_rock_small.yy",},},
+    {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},},
+    {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
