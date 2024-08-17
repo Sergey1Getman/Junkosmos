@@ -4,4 +4,4 @@ if Time > 0
 	if step % 60 {}
 	else {Time = Time - 1}
 }
-else {game_restart()}
+else {/*game_restart()*/}
