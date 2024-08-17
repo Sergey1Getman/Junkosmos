@@ -12,7 +12,9 @@ step = 0;
 invulnerable = false;
 invul_time = 0;
 flash = 0;
+
 explosion_cooldown = 0;
 shot_cooldown = 0;
+
 
 cam = view_get_camera(0);
