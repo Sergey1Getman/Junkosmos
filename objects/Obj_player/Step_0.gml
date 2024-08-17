@@ -73,7 +73,7 @@ if keyboard_check(vk_right)
 }
 
 
-// WASD controls
+// WASD controls a
 if keyboard_check(ord("W"))
 {
 		if speed > 5 { if speed > 8 {} else {motion_add(image_angle, 0.05);} }
