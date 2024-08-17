@@ -1,10 +1,14 @@
 /// @description Movement
 // Вы можете записать свой код в этом редакторе
 step = step + 1;
+if explosion_cooldown > 0 {explosion_cooldown -= 1;}
+if shot_cooldown > 0 {shot_cooldown -= 1;}
+
 
 if stage == 1
 {
 	global.multishot = false;
+	global.exp_size = 1;
 	camera_set_view_size(cam, 1600, 1200);
 	camera_set_view_border(cam, 800, 600);
 	image_xscale = 1;
@@ -15,6 +19,7 @@ if stage == 1
 }
 else if stage == 2
 {
+	global.exp_size = 2;
 	global.multishot = false;
 	camera_set_view_size(cam, (1600*1.25), (1200*1.25));
 	camera_set_view_border(cam, (800*1.25), (600*1.25));
@@ -28,6 +33,7 @@ else if stage == 2
 }
 else if stage == 3
 {
+	global.exp_size = 3;
 	global.multishot = true;
 	camera_set_view_size(cam, (1600*1.5), (1200*1.5));
 	camera_set_view_border(cam, (800*1.5), (600*1.5));
@@ -87,8 +93,12 @@ if keyboard_check(ord("D"))
 {
         image_angle -= 4;
 }
-if mouse_check_button_pressed(mb_left)
+if mouse_check_button(mb_left)
 {
+
+	if shot_cooldown > 0 {}
+	else
+	{
 		if global.multishot == true 
 		{
 			global.shot_angle = image_angle - 30;
@@ -97,11 +107,27 @@ if mouse_check_button_pressed(mb_left)
 			instance_create_layer(x, y, "Instances", Obj_bullet);
 			global.shot_angle = image_angle + 30
 			instance_create_layer(x, y, "Instances", Obj_bullet);
+			shot_cooldown += 10;
 		}
-		else {instance_create_layer(x, y, "Instances", Obj_bullet)}
+		else 
+		{
+			instance_create_layer(x, y, "Instances", Obj_bullet)
+			shot_cooldown += 15;
+		}
+	}
+	
+}		
+
+
+if keyboard_check(vk_space) 
+{
+	if explosion_cooldown > 0 {}
+	else 
+	{
+		instance_create_layer(x-(120*global.exp_size), y-(120*global.exp_size), "Instances", Obj_explosion);
+		explosion_cooldown += 480;
+	}
 }
-
-
 
 if keyboard_check(ord("R"))
 {

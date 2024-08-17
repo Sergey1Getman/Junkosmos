@@ -37,6 +37,7 @@
   "name":"junkosmos",
   "resources":[
     {"id":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},},
+    {"id":{"name":"Obj_explosion","path":"objects/Obj_explosion/Obj_explosion.yy",},},
     {"id":{"name":"Obj_game","path":"objects/Obj_game/Obj_game.yy",},},
     {"id":{"name":"Obj_HUD","path":"objects/Obj_HUD/Obj_HUD.yy",},},
     {"id":{"name":"Obj_mass","path":"objects/Obj_mass/Obj_mass.yy",},},
@@ -52,6 +53,7 @@
     {"id":{"name":"Hud_element2","path":"sprites/Hud_element2/Hud_element2.yy",},},
     {"id":{"name":"Mass","path":"sprites/Mass/Mass.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},},
     {"id":{"name":"spr_player_1","path":"sprites/spr_player_1/spr_player_1.yy",},},
     {"id":{"name":"spr_player_2","path":"sprites/spr_player_2/spr_player_2.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
