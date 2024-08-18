@@ -1,12 +1,12 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_pointer",
+  "%Name":"spr_pointer_1",
   "bboxMode":0,
-  "bbox_bottom":51,
-  "bbox_left":11,
-  "bbox_right":30,
-  "bbox_top":12,
-  "collisionKind":5,
+  "bbox_bottom":25,
+  "bbox_left":8,
+  "bbox_right":22,
+  "bbox_top":6,
+  "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
@@ -16,12 +16,12 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":32,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f566147a-147d-426c-af74-ee70a5450f6b","blendMode":0,"displayName":"default","isLocked":false,"name":"f566147a-147d-426c-af74-ee70a5450f6b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_pointer",
+  "name":"spr_pointer_1",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03f7a7e5-b048-47b9-9fe1-f2342587ecba","path":"sprites/spr_pointer/spr_pointer.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03f7a7e5-b048-47b9-9fe1-f2342587ecba","path":"sprites/spr_pointer_1/spr_pointer_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d8c4e362-872a-4501-b1a0-95ab71d45377","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":43,
+  "width":32,
 }
