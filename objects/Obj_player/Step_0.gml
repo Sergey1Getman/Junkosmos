@@ -4,6 +4,7 @@ step = step + 1;
 if explosion_cooldown > 0 {explosion_cooldown -= 1;}
 if shot_cooldown > 0 {shot_cooldown -= 1;}
 
+move_bounce_solid(0);
 
 if stage == 1
 {
