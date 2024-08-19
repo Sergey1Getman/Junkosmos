@@ -62,6 +62,7 @@
     {"id":{"name":"Obj_rock_small","path":"objects/Obj_rock_small/Obj_rock_small.yy",},},
     {"id":{"name":"Obj_rock_ultra","path":"objects/Obj_rock_ultra/Obj_rock_ultra.yy",},},
     {"id":{"name":"Obj_rock","path":"objects/Obj_rock/Obj_rock.yy",},},
+    {"id":{"name":"object_comit","path":"objects/object_comit/object_comit.yy",},},
     {"id":{"name":"pointer_1","path":"objects/pointer_1/pointer_1.yy",},},
     {"id":{"name":"pointer_2","path":"objects/pointer_2/pointer_2.yy",},},
     {"id":{"name":"textbox","path":"objects/textbox/textbox.yy",},},
