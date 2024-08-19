@@ -10,8 +10,8 @@
   "name":"Obj_boss",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Объекты/Enemies.yy",
+    "name":"enemies",
+    "path":"folders/Объекты/enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_boss_big",
     "path":"sprites/spr_boss_big/spr_boss_big.yy",
