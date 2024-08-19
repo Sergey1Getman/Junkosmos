@@ -9,8 +9,10 @@
   "name":"Obj_boss_canons",
   "overriddenProperties":[],
   "parent":{
+
     "name":"Enemies",
     "path":"folders/Объекты/Enemies.yy",
+
   },
   "parentObjectId":null,
   "persistent":false,

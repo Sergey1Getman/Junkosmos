@@ -14,8 +14,10 @@
   "name":"Obj_enemy_bullet_t",
   "overriddenProperties":[],
   "parent":{
+
     "name":"Enemies",
     "path":"folders/Объекты/Enemies.yy",
+
   },
   "parentObjectId":null,
   "persistent":false,

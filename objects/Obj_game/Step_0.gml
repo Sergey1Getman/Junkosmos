@@ -3,7 +3,7 @@ if keyboard_check(ord("R"))
         game_restart();
 }
 
-if room == Room1 or Room2
+if room == Room1 or Room_boss
 {
 if keyboard_check_pressed(ord("P"))
     {
