@@ -14,8 +14,8 @@
   "name":"Obj_enemy_bullet_boss",
   "overriddenProperties":[],
   "parent":{
-    "name":"Объекты",
-    "path":"folders/Объекты.yy",
+    "name":"enemies",
+    "path":"folders/Объекты/enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
