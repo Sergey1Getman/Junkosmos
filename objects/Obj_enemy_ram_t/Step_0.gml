@@ -6,7 +6,6 @@ if speed > 0
 	{
 			motion_set(image_angle, 0)
 	}
-
 if think > 0 
 {
 	think -= 1;
@@ -15,18 +14,23 @@ else
 {
 		if instance_exists(Obj_player) 
 		{
-			image_angle = point_direction(x, y, Obj_player.x, Obj_player.y);
+			if distance_to_object(Obj_player) <= 1200 
+			{
+				image_angle = point_direction(x, y, Obj_player.x, Obj_player.y);
+			}
+			else {}
 		}
+
 
 
 	move_bounce_solid(0);
 
 	if distance_to_object(Obj_player) <= 600 
 	{
-		if speed > 8 {}
+		if speed > 7.5 {}
 		else {motion_add(image_angle, 0.25);}
 	}
-	else 
+	else if distance_to_object(Obj_player) <= 1200
 	{
 		if speed > 5 {}
 		else {motion_add(image_angle, 0.15);}
