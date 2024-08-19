@@ -4,7 +4,7 @@ move_bounce_solid(0);
 
 if hp <= 0
 {
-	if instance_number(Obj_rock) < 24
+	if instance_number(Obj_rock) < 36
 	{
 		//x_r = random(2)+1;
 		//y_r = random(2)+1;
