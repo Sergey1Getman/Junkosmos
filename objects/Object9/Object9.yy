@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_boss_canons",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Object9",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_boss_canons",
+  "name":"Object9",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemies",
-    "path":"folders/Объекты/enemies.yy",
+    "name":"Объекты",
+    "path":"folders/Объекты.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy",
-    "path":"sprites/spr_enemy/spr_enemy.yy",
+    "name":"Sprite15",
+    "path":"sprites/Sprite15/Sprite15.yy",
   },
   "spriteMaskId":null,
   "visible":true,
