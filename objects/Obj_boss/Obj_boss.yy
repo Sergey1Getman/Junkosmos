@@ -9,8 +9,8 @@
   "name":"Obj_boss",
   "overriddenProperties":[],
   "parent":{
-    "name":"Объекты",
-    "path":"folders/Объекты.yy",
+    "name":"Enemies",
+    "path":"folders/Объекты/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
