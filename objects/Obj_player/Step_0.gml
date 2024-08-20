@@ -41,7 +41,7 @@ else if stage == 3
 	image_xscale = 2;
     image_yscale = 2;
 	//sprite_index = spr_player_2;
-	//global.hp_mass_max = mass_until_new_stage[stage-1];
+	global.hp_mass_max = mass_until_new_stage[stage-1];
 	if global.hp_mass < mass_until_new_stage[stage-2] {stage -= 1}
 }
 
@@ -61,14 +61,14 @@ if speed > 0
 }
 if speed < 0
 {
-		motion_set(image_angle, 0)
+		speed = 0;
 }
 
 
 if keyboard_check(vk_up)
 {
-		if speed > 5 { if speed > 8 {} else {motion_add(image_angle, 0.05);} }
-		else {motion_add(image_angle, 0.1);}
+		if speed > 5 { if speed > 8 {} else {motion_add(image_angle, 0.1);} }
+		else {motion_add(image_angle, 0.15);}
 }
 if keyboard_check(vk_left)
 {
@@ -83,8 +83,8 @@ if keyboard_check(vk_right)
 // WASD controls a
 if keyboard_check(ord("W"))
 {
-		if speed > 5 { if speed > 8 {} else {motion_add(image_angle, 0.05);} }
-		else {motion_add(image_angle, 0.1);}
+		if speed > 5 { if speed > 8 {} else {motion_add(image_angle, 0.1);} }
+		else {motion_add(image_angle, 0.15);}
 }
 if keyboard_check(ord("A"))
 {
@@ -94,7 +94,21 @@ if keyboard_check(ord("D"))
 {
         image_angle -= 4;
 }
-if mouse_check_button(mb_left)
+if stage >= 2 
+{
+	if keyboard_check(ord("S"))
+	{
+		if speed > 5 { if speed > 8 {} else {motion_add(image_angle+180, 0.1);} }
+		else {motion_add(image_angle+180, 0.15);}
+	}
+	if keyboard_check(vk_down)
+	{
+		if speed > 5 { if speed > 8 {} else {motion_add(image_angle+180, 0.1);} }
+		else {motion_add(image_angle+180, 0.15);}
+	}
+}
+
+if mouse_check_button(mb_left) or keyboard_check(ord("X"))
 {
 
 	if shot_cooldown > 0 {}
@@ -108,7 +122,7 @@ if mouse_check_button(mb_left)
 			instance_create_layer(x, y, "Instances", Obj_bullet);
 			global.shot_angle = image_angle + 30
 			instance_create_layer(x, y, "Instances", Obj_bullet);
-			shot_cooldown += 10;
+			shot_cooldown += 20;
 		}
 		else 
 		{
@@ -135,6 +149,15 @@ if keyboard_check(ord("R"))
         game_restart();
 }
 
-if global.hp_mass <= 0 {instance_destroy();}
+if global.hp_mass <= 0 {effect_create_above(ef_explosion, x, y, 2, c_teal); global.player_defeated = true; instance_destroy();}
+
+//global.Time = 120
+if step % 120 {}
+else 
+{
+	if global.Time <= 10 {flash = 0.8}
+	if global.Time <= 0 {effect_create_above(ef_explosion, x, y, 2, c_teal); global.player_defeated = true; instance_destroy();}
+	//global.Time = global.Time - 1;
+}
 
 move_wrap(true, true, 0)

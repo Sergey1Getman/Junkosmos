@@ -1,6 +1,6 @@
 if lock_in > 0 {lock_in -= 1}
 if shot_cooldown > 0 {shot_cooldown -= 1}
-image_angle += 1;
+image_angle += 0.5;
 if global.cd > 0 
 {
 	global.cd -= 1;

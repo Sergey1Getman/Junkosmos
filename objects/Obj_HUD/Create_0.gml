@@ -1,2 +1,2 @@
-Time = 120
+global.Time = 120
 step = 0

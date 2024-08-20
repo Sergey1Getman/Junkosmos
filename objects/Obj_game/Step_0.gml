@@ -21,3 +21,6 @@ if paused == true
     //alarm[1]++;
     }
 }
+
+if global.boss_defeated = true && check = 1 {alarm[0] = 240; check -= 1;}
+if global.player_defeated = true && check = 1 {alarm[0] = 240; check -= 1;}

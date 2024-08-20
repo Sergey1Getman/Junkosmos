@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_flash_1",
+  "name":"shd_flash_1",
+  "parent":{
+    "name":"Шейдеры",
+    "path":"folders/Шейдеры.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
