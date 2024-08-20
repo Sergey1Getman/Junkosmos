@@ -7,6 +7,7 @@ global.hp_mass_max = 200;
 global.multishot = false;
 global.shot_angle = 0;
 global.exp_size = 0;
+global.player_defeated = false;
 mass_until_new_stage = [400, 600, 1000]
 step = 0;
 invulnerable = false;

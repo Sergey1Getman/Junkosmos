@@ -9,7 +9,7 @@ if instance_exists(Obj_player)
 	draw_text_transformed(300, 125, "/", 3, 3, 0);
 	draw_text_transformed(340, 125, global.hp_mass_max, 3, 3, 0);
 	draw_sprite(Hud_element1, 1, 2600, 0);
-	draw_text_transformed(2825, 100, Time, 5, 5, 0);
+	draw_text_transformed(2825, 100, global.Time, 5, 5, 0);
 }
 if instance_exists(Obj_boss) 
 {
@@ -19,5 +19,10 @@ if instance_exists(Obj_boss)
 }
 if global.boss_defeated = true 
 {
-	draw_text_transformed(1500, 1200, "YOU WIN!", 3, 3, 0);
+	draw_text_transformed(1370, 1200, "YOU WIN!", 5, 5, 0);
+}
+
+if global.player_defeated = true 
+{
+	draw_text_transformed(1250, 1200, "YOU ARE DEFEATED!", 5, 5, 0);
 }
