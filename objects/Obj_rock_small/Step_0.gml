@@ -4,6 +4,7 @@ move_bounce_solid(0);
 
 if hp <= 0
 {
+	audio_play_sound(rockdestroy,0,false);
 	if instance_number(Obj_rock) < 36
 	{
 		//x_r = random(2)+1;

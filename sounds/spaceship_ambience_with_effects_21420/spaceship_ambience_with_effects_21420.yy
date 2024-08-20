@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"spaceship_ambience_with_effects_21420",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":593.42365,
+  "name":"spaceship_ambience_with_effects_21420",
+  "parent":{
+    "name":"Звуки",
+    "path":"folders/Звуки.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"spaceship_ambience_with_effects_21420.mp3",
+  "type":0,
+  "volume":1.0,
+}

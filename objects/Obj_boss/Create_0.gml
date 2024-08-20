@@ -1,7 +1,7 @@
 direction = random(360);
 image_angle = random(360);
-global.boss_hp = 1000;
-global.boss_hp_max = 1000;
+global.boss_hp = 4000;
+global.boss_hp_max = 4000;
 global.cd = 0;
 global.multishot_attack = false;
 global.spin_attack = false;

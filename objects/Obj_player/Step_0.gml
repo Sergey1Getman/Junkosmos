@@ -123,11 +123,13 @@ if mouse_check_button(mb_left) or keyboard_check(ord("X"))
 			global.shot_angle = image_angle + 30
 			instance_create_layer(x, y, "Instances", Obj_bullet);
 			shot_cooldown += 20;
+			audio_play_sound(shoot,0,false)
 		}
 		else 
 		{
 			instance_create_layer(x, y, "Instances", Obj_bullet)
 			shot_cooldown += 15;
+			audio_play_sound(shoot,0,false)
 		}
 	}
 	

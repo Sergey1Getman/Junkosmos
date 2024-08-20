@@ -42,6 +42,7 @@ if hp <= 0
 	effect_create_above(ef_explosion, x, y, 1.2, c_yellow);
 	instance_create_layer(x, y, "Instances", Obj_mass);
 	instance_destroy();
+	audio_play_sound(explosion,0,false);
 }
 
 move_wrap(true, true, 0)
