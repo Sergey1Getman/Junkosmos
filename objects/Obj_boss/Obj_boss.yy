@@ -10,11 +10,8 @@
   "name":"Obj_boss",
   "overriddenProperties":[],
   "parent":{
-
     "name":"Enemies",
     "path":"folders/Объекты/Enemies.yy",
-
-
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_boss_big",
-    "path":"sprites/spr_boss_big/spr_boss_big.yy",
+    "name":"Bossfight",
+    "path":"sprites/Bossfight/Bossfight.yy",
   },
   "spriteMaskId":null,
   "visible":true,
